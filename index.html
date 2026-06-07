@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Flora – Gifting love to your dear ones. Flowers, plants, and floral services for every occasion.">
+  <meta name="keywords" content="flowers, plants, bouquets, floral arrangements, gifts, events, wedding flowers, valentine flowers">
+  <meta name="author" content="Flora">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://flora.com/">
+  <meta property="og:title" content="Flora – Gifting Love to Your Dear Ones">
+  <meta property="og:description" content="Beautiful flowers, plants, and floral services for every occasion. Valentine's Day, weddings, birthdays, and more.">
+  <meta property="og:image" content="https://flora.com/cover.jpg">
+  
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://flora.com/">
+  <meta property="twitter:title" content="Flora – Gifting Love to Your Dear Ones">
+  <meta property="twitter:description" content="Beautiful flowers, plants, and floral services for every occasion.">
+  <meta property="twitter:image" content="https://flora.com/cover.jpg">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="logo_transparent.png">
+  
+  <title>Flora – Homepage</title>
+  <link rel="stylesheet" href="flowerstyle.css">
+</head>
+<body>
+
+  <!-- Green accent bar -->
+  <div class="greentop-bar"></div>
+
+  <!-- Top Navigation -->
+  <header class="top-bar">
+    <a href="index.html">
+      <img class="logo" src="logo_transparent.png" alt="Flora Logo">
+    </a>
+    <nav>
+      <ul class="tabs">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="flowerevents.html">Events</a></li>
+        <li><a href="flowershop.html">Shop</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="flowergallery.html">Gallery</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </header>
+
+  <!-- Mobile Nav Drawer -->
+  <nav class="mobile-nav" id="mobileNav" aria-hidden="true">
+    <ul>
+      <li><a href="index.html" onclick="closeMenu()">Home</a></li>
+      <li><a href="flowerevents.html" onclick="closeMenu()">Events</a></li>
+      <li><a href="flowershop.html" onclick="closeMenu()">Shop</a></li>
+      <li><a href="#services" onclick="closeMenu()">Services</a></li>
+      <li><a href="flowergallery.html" onclick="closeMenu()">Gallery</a></li>
+      <li><a href="#contact" onclick="closeMenu()">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Page Body -->
+  <div class="page-content">
+
+    <!-- Hero Video -->
+    <section class="hero">
+      <video autoplay loop muted playsinline>
+        <source src="videg.mp4" type="video/mp4">
+      </video>
+      <div class="hero-overlay">
+        <div class="centered">SEGALA KEBUTUHAN DEKORASI TERAS ANDA! </div>
+      </div>
+    </section>
+
+    <!-- What We Offer -->
+    <section id="services">
+      <div class="section-heading offer-top">
+        <p class="o1">Apa yang kita tawarkan?</p>
+        <p class="o2">4 Alasan memilih berpartner dengan kami!</p>
+        <hr class="smol-hr">
+      </div>
+
+      <div class="card-holder">
+        <div class="card">
+          <img src="icon_01.png" alt="Valentine's Day flowers">
+          <p class="card-head">Produk Berkualitas</p>
+          <p>Kami menjamin barang yang anda terima adalah produk dengan produktivitas tinggi dan efisiensi tinggi</p>
+        </div>
+        <div class="card">
+          <img src="icon_02.png" alt="Gift Plants">
+          <p class="card-head">Supplier Resmi</p>
+          <p>Kami adalah agen resmi dari merek dekorasi terkenal sehingga tidak perlu diragukan</p>
+        </div>
+        <div class="card">
+          <img src="icon_03.png" alt="Gift Flowers">
+          <p class="card-head">Harga Bersaing</p>
+          <p>Harga yang kami tawarkan mampu bersaing dengan yang ada di Marketplace</p>
+        </div>
+        <div class="card">
+          <img src="icon_04.png" alt="Co-Flower Supplies">
+          <p class="card-head">Tambahan estetika, tambahan penjualan</p>
+          <p>Sebanyak 2/3 klien kami mengaku mendapat tambahan penjualan ketika memasang dekorasi dari kami.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pricing -->
+    <section>
+      <div class="section-heading">
+        <p class="o1">Price List</p>
+        <p class="o2">Temukan penawaran terbaik!</p>
+        <hr class="smol-hr">
+      </div>
+
+      <div class="card-holder" style="padding-top: 30px;">
+        <div class="cardd">
+          <p class="plan-name">Gorden Silver</p>
+          <p class="money">Rp75.000</p>
+          <p>per meter</p>
+          <p class="cardd-body">
+            <b>Garden</b> Service<br>
+            <b>Event</b> Planning<br>
+            <b>Garden</b> Party<br>
+            <b>Preparing</b> Landscape<br>
+            <b>Garden</b> Fence
+          </p>
+          <button class="cardd-btn" onclick="confirmOffer()">Ambil ini</button>
+        </div>
+        <div class="cardd">
+          <p class="plan-name">Gorden Gold</p>
+          <p class="money">Rp175.000</p>
+          <p>per meter</p>
+          <p class="cardd-body">
+            <b>Garden</b> Service<br>
+            <b>Event</b> Planning<br>
+            <b>Garden</b> Party<br>
+            <b>Preparing</b> Landscape<br>
+            <b>Garden</b> Fence
+          </p>
+          <button class="cardd-btn" onclick="confirmOffer()">Ambil ini</button>
+        </div>
+        <div class="cardd">
+          <p class="plan-name">Gorden Diamond</p>
+          <p class="money">Rp325.000</p>
+          <p>per meter</p>
+          <p class="cardd-body">
+            <b>Garden</b> Service<br>
+            <b>Event</b> Planning<br>
+            <b>Garden</b> Occasion<br>
+            <b>Preparing</b> Landscape<br>
+            <b>Garden</b> Fence
+          </p>
+          <button class="cardd-btn" onclick="confirmOffer()">Ambil ini</button>
+        </div>
+        <div class="cardd">
+          <p class="plan-name">Gorden Platinum</p>
+          <p class="money">Rp400.000</p>
+          <p>per meter</p>
+          <p class="cardd-body">
+            <b>Garden</b> Service<br>
+            <b>Event</b> Planning<br>
+            <b>Garden</b> Party<br>
+            <b>Preparing</b> Landscape<br>
+            <b>Garden</b> Fence
+          </p>
+          <button class="cardd-btn" onclick="confirmOffer()">Ambil ini</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact / Footer -->
+    <footer id="contact">
+      <div class="end">
+        <div class="end-block">
+          <p class="contact">Contact Details</p>
+          <p>
+            🔗 www.singosarijaya<br>
+            ✉️ info@dusunsingosari.com<br>
+            📞 +62 811 888 999<br>
+            📞 +62 852 444 333<br>
+            🏠 Dusun Kapitalungo, Kecamatan Singosari, Kabupaten Malang.
+          </p>
+          <p class="large-txt">QUERY<br>FORM<br>→</p>
+        </div>
+        <div class="end-block">
+          <div class="frm">
+            <p>Name:</p>
+            <input type="text" placeholder="Masukkan Nama" required>
+            <p>Email:</p>
+            <input type="email" placeholder="Masukkan Email" required>
+            <p>Phone:</p>
+            <input type="tel" placeholder="Masukkan Nomer Handphone" required>
+            <p>Query Topic:</p>
+            <input type="text" placeholder="Enter the topic of your query" required>
+            <p>Comments/Questions:</p>
+            <textarea rows="6" placeholder="Type here"></textarea>
+            <button class="frm-btn" onclick="submitForm()">Submit</button>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>© Singosari Pvt. Ltd. Copyright 2026</p>
+      </div>
+    </footer>
+
+  </div><!-- end .page-content -->
+
+  <!-- Coming Soon Modal -->
+  <div id="comingSoonModal" class="modal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2 id="modalTitle" class="modal-title">Coming Soon</h2>
+        <button class="modal-close" onclick="closeModal()" aria-label="Close modal">&times;</button>
+      </div>
+      <div class="modal-body">
+        <p id="modalMessage">This feature is coming soon!</p>
+      </div>
+      <div class="modal-footer">
+        <button class="modal-btn" onclick="closeModal()">Got it!</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="flora.js"></script>
+</body>
+</html>
